@@ -2,6 +2,9 @@
 <openerp>
 	<data>
 
+         <!--adding oe_structure elements to the shop category frontend-->
+
+         <!--building_block_1-->
 		 <template id="bp_shop_category_building_block_1" inherit_id="website_sale.products" name="Products">
 			<xpath expr="//div[@class='oe_structure']" position="after">
                 <t t-set="shop_category" t-value="False"/>
@@ -21,6 +24,7 @@
             </xpath>
 		</template>
 
+         <!--building_block_2-->
         <template id="bp_shop_category_building_block_2" inherit_id="website_sale.products" name="Products">
 			<xpath expr="//div[@id='products_grid']/table" position="before">
                 <t t-set="shop_category" t-value="False"/>
@@ -40,6 +44,7 @@
             </xpath>
 		</template>
 
+         <!--building_block_3-->
         <template id="bp_shop_category_building_block_3" inherit_id="website_sale.products" name="Products">
 			<xpath expr="//div[@class='oe_structure mb32']" position="after">
                 <t t-set="shop_category" t-value="False"/>
