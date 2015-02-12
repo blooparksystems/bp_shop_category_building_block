@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+
+		 <template id="bp_shop_category_building_block_1" inherit_id="website_sale.products" name="Products">
+			<xpath expr="//div[@class='oe_structure']" position="after">
+                <t t-set="shop_category" t-value="False"/>
+                <t t-if="root_category">
+                    <t t-set="shop_category" t-value="root_category"/>
+                </t>
+                <t t-if="category">
+                    <t t-set="shop_category" t-value="category"/>
+                </t>
+                <t t-if="shop_category">
+                    <div t-field="shop_category.website_description_1" class="oe_structure mt32"
+                         id="category_full_description"/>
+                </t>
+                <t t-if="not shop_category">
+                    <div class="oe_structure mt32"/>
+                </t>
+            </xpath>
+		</template>
+
+        <template id="bp_shop_category_building_block_2" inherit_id="website_sale.products" name="Products">
+			<xpath expr="//div[@id='products_grid']/table" position="before">
+                <t t-set="shop_category" t-value="False"/>
+                <t t-if="root_category">
+                    <t t-set="shop_category" t-value="root_category"/>
+                </t>
+                <t t-if="category">
+                    <t t-set="shop_category" t-value="category"/>
+                </t>
+                <t t-if="shop_category">
+                    <div t-field="shop_category.website_description_2" class="oe_structure mt32"
+                         id="category_full_description"/>
+                </t>
+                <t t-if="not shop_category">
+                    <div class="oe_structure mt32"/>
+                </t>
+            </xpath>
+		</template>
+
+        <template id="bp_shop_category_building_block_3" inherit_id="website_sale.products" name="Products">
+			<xpath expr="//div[@class='oe_structure mb32']" position="after">
+                <t t-set="shop_category" t-value="False"/>
+                <t t-if="root_category">
+                    <t t-set="shop_category" t-value="root_category"/>
+                </t>
+                <t t-if="category">
+                    <t t-set="shop_category" t-value="category"/>
+                </t>
+                <t t-if="shop_category">
+                    <div t-field="shop_category.website_description_3" class="oe_structure mt32"
+                         id="category_full_description"/>
+                </t>
+                <t t-if="not shop_category">
+                    <div class="oe_structure mt32"/>
+                </t>
+            </xpath>
+		</template>
+
+	</data>
+</openerp>
