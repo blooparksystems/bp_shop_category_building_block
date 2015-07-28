@@ -20,16 +20,18 @@
 ##############################################################################
 {
     'name': "Building Block for Shop Category",
-
     'summary': """
-        enables Building Blocks for Shop Category in the odoo ecommerce shop frontend""",
+        enables Building Blocks for Shop Category
+        in the odoo ecommerce shop frontend
+    """,
 
     'description': """
-         enables Building Blocks for Shop Category in the odoo ecommerce shop frontend""",
-
+         enables Building Blocks for Shop Category
+         in the odoo ecommerce shop frontend
+    """,
     'author': "bloopark systems GmbH & Co. KG",
     'website': "http://www.bloopark.de",
-
+    'license': 'AGPL-3',
     'category': 'shop',
     'version': '1.0',
 
@@ -41,9 +43,4 @@
         'views/templates.xml',
     ],
 
-    'demo': [
-    ],
-
-    'tests': [
-    ],
 }
